@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="map1.js"></script>
+    <script src="chat.js"></script>
+    <style>
+        body, div{
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body onload="loadmap(); setInterval(loadChat, 2000);">
+<h1>Buffalo Police Department</h1>
+<div id="map"></div>
+<div id="chart"></div>
+
+Review: <input type="text" id="message">
+<button onClick="sendMessage();">Send</button>
+<hr/>
+<div id="chat"></div><br/>
+
+</body>
+</html>
